@@ -1,9 +1,9 @@
 import socket
-from keras.models import load_model
+from tensorflow.keras.models import load_model
 import numpy as np
 
-test_file = np.loadtxt("test1.txt")
-model1  = load_model('model.h5')
+test_file = np.loadtxt("testing.txt")
+model1  = load_model('model1.h5')
 
 s = socket.socket()
 s.bind(('127.0.0.1',4444))
@@ -42,5 +42,3 @@ conn.close()
 #dos [1. 0. 0. 0. 0.] 2
 #Probe  [0. 0. 1. 0. 0.] 17
 #R2U [0. 0. 0. 1. 0.] 13
-#U2L [0. 0. 0. 0. 1.] 
-
