@@ -10,7 +10,7 @@ s.connect(('127.0.0.1',4444))
 
 print("Connected to Victim Server")
 
-	
+#Change the value of index below to simulate a different kind of attack.
 
 index = 1 #normal
 #index = 4 #dos
